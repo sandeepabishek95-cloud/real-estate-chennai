@@ -3,41 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chennai Real Estate</title>
-
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-<!-- CSS -->
+<title>Soundaramoorthy Real Estates Chennai Pvt Limited</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Navbar -->
 <nav class="navbar">
-  <div class="logo">🏠 Chennai Real Estate</div>
-  <a href="https://wa.me/917010022388" class="wa-btn">💬 WhatsApp</a>
+  <div class="logo">🏠 Soundaramoorthy Real Estates Chennai Pvt Limited</div>
+  <div class="nav-actions">
+    <a href="tel:+917010022388" class="call-btn">📞</a>
+    <a href="https://wa.me/917010022388" class="wa-btn">💬</a>
+  </div>
 </nav>
 
-<!-- Hero Section -->
 <header class="hero">
-  <h1>Find Your Dream Property in Chennai</h1>
-  <p>Land, Apartments, Villas – All in One Place</p>
+  <h1>Find Your Dream Home in Chennai</h1>
+  <p>Premium listings with verified owners and car parking details</p>
 </header>
 
-<!-- Properties Section -->
 <section class="section">
-  <h2>Available Properties</h2>
-  <div class="cards">
-    <a href="listing.html?prop=1" class="card">Adyar House</a>
-    <a href="listing.html?prop=2" class="card">Velachery Land</a>
-    <a href="listing.html?prop=3" class="card">T. Nagar Apartment</a>
-    <a href="listing.html?prop=4" class="card">Anna Nagar Villa</a>
-    <a href="listing.html?prop=5" class="card">Besant Nagar Beach House</a>
+  <h2>Filter Properties</h2>
+  <div class="filters">
+    <input type="text" id="search-location" placeholder="Search Chennai location">
+    <select id="filter-type">
+      <option value="">All Types</option>
+      <option value="Villa">Villa</option>
+      <option value="Apartment">Apartment</option>
+      <option value="Land">Land</option>
+    </select>
+    <button onclick="applyFilter()">Search</button>
   </div>
 </section>
 
-<footer>© Chennai Real Estate</footer>
+<section class="section">
+  <h2>Property Listings</h2>
+  <div id="property-list" class="cards"></div>
+</section>
 
+<a href="https://wa.me/917010022388" class="whatsapp-float">💬</a>
+<footer>© Soundaramoorthy Real Estates Chennai Pvt Limited</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
